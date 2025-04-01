@@ -394,4 +394,36 @@ body {
   color: var(--color-w);
 }
 
+.info_me {
+  max-width: 1920px;
+  margin: 0 0;
+  color: var(--color-w);
+  font-family: var(--font-family-base);
+  font-size: 28px;
+  position: relative;
+}
+.info_me-fotome {
+  position: relative;
+  float: left;
+}
+.info_me-p {
+  position: relative;
+  float: right;
+  margin-right: 170px;
+  margin-top: -40px;
+  width: 860px;
+  height: 352px;
+}
+.info_me-juse {
+  position: relative;
+  float: right;
+  transform: translateX(-14%);
+  transform: translateY(-74%);
+}
+
+.titleOrange {
+  padding-left: 430px;
+  color: var(--color-orange);
+}
+
 /*# sourceMappingURL=main.css.map */
