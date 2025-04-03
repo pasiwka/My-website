@@ -10,40 +10,38 @@ body {
     height: 150px;
     margin: 0 auto;
     padding: 0;
-}
 
-.header__container {
-    padding: 0 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    border-bottom: 1px solid var(--color-gray); /* Серая полупрозрачная полоска */
+    &__container {
+        padding: 0 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        border-bottom: 1px solid var(--color-gray); /* Серая полупрозрачная полоска */
+    }
+    &__logo-link {
+        display: flex;
+        align-items: center;
+        
+    }
 
-}
-
-.header__logo-link {
-    display: flex;
-    align-items: center;
+    &__menu-list {
+        width: 600px;
+        height: 50px;
+        background-color: var(--color-gray-10);
+        border-radius: 30px;
+        display: flex;
+        list-style: none;
+        gap: 80px; 
+        padding: 0;
+        margin: 0;
+    }
+    &__menu-item a {
+        color: var(--color-w); 
+        text-decoration: none;
+        font-size: 17px; 
+    }
     
-}
-
-.header__menu-list {
-    width: 600px;
-    height: 50px;
-    background-color: var(--color-gray-10);
-    border-radius: 30px;
-    display: flex;
-    list-style: none;
-    gap: 80px; 
-    padding: 0;
-    margin: 0;
-}
-
-.header__menu-item a {
-    color: var(--color-w); 
-    text-decoration: none;
-    font-size: 17px; 
 }
 
 .header__menu-item a:hover {

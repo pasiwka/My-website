@@ -1,34 +1,57 @@
-.info_me{
+.info_me {
+    // Основные стили
     max-width: 1920px;
-    margin: 0 0;
+    margin: 0 auto;
     color: var(--color-w);
     font-family: var(--font-family-base);
     font-size: 28px;
-    position: relative; 
-    &-fotome{
-        position: relative;
-        float: left;
+    position: relative;
+
+    // Flex-модель
+    display: flex;
+    flex-wrap: wrap; // Важно для переноса апельсина на новую строку
+    align-items: flex-start;
+    column-gap: 0; // Нулевое расстояние между колонками
+    row-gap: 0; // Расстояние между строками (между фото и апельсином)
+
+    border-bottom: 1px solid var(--color-gray);
+    padding-bottom: 40px;
+
+    // Контейнер для фото и апельсина
+    &-fotome-container {
+        display: flex;
+        flex-direction: column;
+        width: 680px; // Ширина основной фотографии
     }
-    &-p{
-        position: relative;
-        float: right;
-        margin-right: 170px;
-        margin-top: -40px ;
+
+    &-fotome {
+        width: 600px;
+        height: 600px;
+    }
+    
+
+    
+    &-p {
         width: 860px;
-        height: 352px;
+        margin-left: 0;
+        margin-right: 170px;
+        padding-top: 40px;
+        
+        img {
+            display: block;
+        }
     }
-    &-juse{
-        position: relative;
-        float: right;
-        transform: translateX(-14%);
-        transform: translateY(-74%);
-
+    
+    &-juse {
+        position: absolute;
+        right: 0;
+        top: 20%;
+        width: 575px;
+        height: auto;
     }
 
-}
-
-
-.titleOrange{
-    padding-left: 430px;
-    color: var(--color-orange);
+    .titleOrange {
+        color: var(--color-orange);
+        padding-left:100px;
+    }
 }

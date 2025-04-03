@@ -1,0 +1,71 @@
+.footer{
+    font-size: 24px;
+    font-family: var(--font-family-header);
+    color: var(--color-orange);
+
+    &_container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &_text-left, 
+    &_text-right {
+        flex: 1;
+        min-width: 200px; 
+        text-align: center;
+    }
+
+    &_text-right{
+        font-size: 14px;
+        padding-top: 8%;
+    }
+
+    &_menu {
+        flex: 0 0 auto;
+
+        &-list {
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        &-item img {
+            width: 70px;
+            height: 70px;
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .footer_content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer_text-left, 
+    .footer_text-right {
+        order: 2; /* Текст после иконок на мобильных */
+    }
+    
+    .footer_menu {
+        order: 1;
+        margin: 15px 0;
+    }
+}
