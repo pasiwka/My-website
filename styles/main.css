@@ -496,5 +496,28 @@ body {
     margin: 15px 0;
   }
 }
+.skills {
+  color: var(--color-w);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  padding-bottom: 0;
+}
+.skills_work-p {
+  padding: 10px 200px 40px 120px;
+}
+.skills h2 {
+  padding: 40px 100px 0 120px;
+  color: var(--color-orange);
+}
+.skills div {
+  border: 1px solid var(--color-gray);
+}
+.skills-o {
+  position: absolute;
+  top: 750px;
+  width: 500px;
+  height: 500px;
+}
 
 /*# sourceMappingURL=main.css.map */
